@@ -1,3 +1,5 @@
+if 1
+
 set number
 set showmatch
 set tabstop=4
@@ -25,7 +27,12 @@ endif
 call neobundle#begin(expand('~/.vim/bundle'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/unite.vim'
+
+if v:version >= 703
+  NeoBundle 'Shougo/unite.vim'
+endif
+
+NeoBundle 'junegunn/seoul256.vim'
 
 call neobundle#end()
 
@@ -37,4 +44,4 @@ if !has('vim_starting')
   call neobundle#call_hook('on_source')
 endif
 
-
+endif
