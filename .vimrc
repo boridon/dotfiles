@@ -7,6 +7,8 @@ set shiftwidth=4
 set backspace=start,eol,indent
 " set whichwrap=b,s,<,>,[,]
 set helplang=ja,en
+set listchars=tab:>.
+set list
 
 " --------------------------------
 " Netrw
