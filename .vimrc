@@ -9,7 +9,7 @@ set backspace=start,eol,indent
 set helplang=ja,en
 set listchars=tab:>.
 set list
-set ic
+set is
 set hls
 
 " --------------------------------
