@@ -11,6 +11,7 @@ set listchars=tab:>.
 set list
 set is
 set hls
+set syntax on
 
 " --------------------------------
 " Netrw
