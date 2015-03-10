@@ -12,6 +12,7 @@ set list
 set is
 set hls
 set syntax=on
+let loaded_matchparen = 1
 
 " --------------------------------
 " Netrw
