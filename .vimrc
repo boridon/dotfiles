@@ -12,6 +12,7 @@ set list
 set is
 set hls
 let loaded_matchparen = 1
+highlight LineNr ctermfg=184
 syntax on
 
 " --------------------------------
