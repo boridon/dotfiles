@@ -39,7 +39,7 @@ if v:version >= 703
   NeoBundle 'Shougo/unite.vim'
 endif
 
-NeoBundle 'junegunn/seoul256.vim'
+NeoBundle 'altercation/vim-colors-solarized'
 
 call neobundle#end()
 
@@ -50,5 +50,23 @@ NeoBundleCheck
 if !has('vim_starting')
   call neobundle#call_hook('on_source')
 endif
+" --------------------------------
+"  ColorScheme
+" --------------------------------
+set background=light
+colorscheme solarized
+
+if &term =~ "xterm-256color" || "screen-256color"
+  set t_Co=256
+  set t_Sf=[3%dm
+  set t_Sb=[4%dm
+elseif &term =~ "xterm-color"
+  set t_Co=8
+  set t_Sf=[3%dm
+  set t_Sb=[4%dm
+endif
+
+hi PmenuSel cterm=reverse ctermfg=33 ctermbg=222 gui=reverse guifg=#3399ff guibg=#f0e68c
+
 
 endif
