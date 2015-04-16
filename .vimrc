@@ -12,7 +12,15 @@ set list
 set is
 set hls
 let loaded_matchparen = 1
-highlight LineNr ctermfg=184
+
+" --------------------------------
+" Color
+" --------------------------------
+autocmd ColorScheme * highlight LineNr term=underline ctermfg=15 ctermbg=95
+autocmd ColorScheme * highlight Statement term=bold ctermfg=228
+autocmd ColorScheme * highlight Comment ctermfg=27
+autocmd ColorScheme * highlight Search term=reverse ctermfg=0 ctermbg=3
+colorscheme default
 syntax on
 
 " --------------------------------
