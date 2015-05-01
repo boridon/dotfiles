@@ -18,8 +18,10 @@ let loaded_matchparen = 1
 " --------------------------------
 autocmd ColorScheme * highlight LineNr term=underline ctermfg=15 ctermbg=95
 autocmd ColorScheme * highlight Statement term=bold ctermfg=228
-autocmd ColorScheme * highlight Comment ctermfg=27
+autocmd ColorScheme * highlight Comment ctermfg=111
 autocmd ColorScheme * highlight Search term=reverse ctermfg=0 ctermbg=3
+autocmd ColorScheme * highlight PreProc term=underline ctermfg=208
+autocmd ColorScheme * highlight Special term=bold ctermfg=13
 colorscheme default
 syntax on
 
