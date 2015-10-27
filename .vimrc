@@ -11,6 +11,8 @@ set listchars=tab:>.
 set list
 set is
 set hls
+set paste
+set noautoindent
 let loaded_matchparen = 1
 
 " --------------------------------
